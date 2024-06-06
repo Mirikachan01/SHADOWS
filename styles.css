@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(circle, #00a8fd, #670d2e); /* Cambia los colores según tu preferencia */
+    color: #000;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+    text-shadow: 1px 2px 2px black, 0 0 5px rgb(72, 191, 255);
+    text-align: left;
+    font-size: 50px;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 2px 2px rgb(239, 114, 255), 0 0 5px rgb(25, 217, 255);
+    text-align: center;
+    font-size: 40px;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 80%;
+    max-width: 1200px;
+    border: 2px solid #fff;
+    margin: 20px 0;
+}
+
+.carousel-images {
+    display: flex;
+    width: calc(400%); /* 4 imágenes */
+    animation: slide 20s linear infinite;
+}
+
+.galeria {
+    flex: 0 0 25%; /* 4 imágenes, cada una ocupa el 25% */
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.fotos img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Ajusta la altura máxima de las imágenes del carrusel */
+    object-fit: cover;
+}
+
+.pie {
+    text-align: center;
+    padding: 10px;
+    background-color: #4479ff;
+    border-top: 1px solid #17aeff;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+div.galeria {
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+    width: 350px;
+}
+
+div.galeria img {
+    width: 80%;
+    height: auto;
+}
+
+div.galeria:hover {
+    border: 1px solid rgb(7, 230, 255);
+}
+
+div.pie {
+    text-align: center;
+    text-shadow: 2px 2px 5px purple;
+    padding: 10px;
+}
+
+.logo {
+    position: fixed;
+    top: 20px; /* Distancia desde la parte superior de la página */
+    left: 20px; /* Distancia desde el borde izquierdo de la página */
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Esto mantiene la proporción de la imagen */
+}
+
+
+
+.content {
+    padding: 20px;
+}
+
+.footer {
+    background-color: #a8e6e6; /* Color turquesa */
+    padding: 20px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.redes-sociales img {
+    width: 30px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+}
+
+
+.scroll-top-btn {
+    display: flexbox; /* Por defecto, el botón está oculto */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8eff6e; /* Color de fondo del botón */
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1000; /* Para asegurarse de que esté por encima de otros elementos */
+}
+
+.scroll-top-btn:hover {
+    background-color: #03ff07; /* Cambiar color al pasar el ratón por encima */
+}
+
+
+
+
+.right-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #670d2e; /* Fondo blanco */
+    border: 1px solid #0a0a0a; /* Borde gris claro */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un poco de profundidad */
+    border-radius: 5px; /* Bordes redondeados */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px; /* Espacio entre los enlaces */
+}
+
+.right-container a {
+    color: #fdfeff; /* Color azul para los enlaces */
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #000000; /* Borde azul */
+    border-radius: 5px;
+    text-align: center; /* Centrar el texto dentro del enlace */
+}
+
+.right-container a:hover {
+    background-color: #00a8fd; /* Fondo azul al pasar el cursor */
+    color: white; /* Color de texto blanco al pasar el cursor */
+}
+
+.content {
+    padding: 20px;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="iconos/icono.png">
+</head>
+<body> 
+    
+        
+            <img src="iconos/logo.png" alt="Logo" class="logo">
+            <h1 class="title">Shadows</h1>
+        
+        
+            <div class="right-container">
+                <a href="contacto.html" class="contact-link">Contacto</a>
+                <a href="catalogo/Plantilla guia.pdf" class="download-btn" download>Descargar catalogo</a>
+            </div>
+     
+    
+    
+    
+    <div class="carousel">
+        <div class="carousel-images">
+            <div class="galeria">
+                <div class="fotos">
+                    <img src="sliders/prueba1.jpg" alt="">
+                </div>
+                <div class="pie">
+                    <p>CANGUROS</p>
+                    <p>Desde 120 bs</p>
+                    
+                </div>
+            </div>
+            <div class="galeria">
+                <div class="fotos">
+                    <img src="sliders/prueba2.jpg" alt="">
+                </div>
+                <div class="pie">
+                    <p>POLERAS</p>
+                    <p>Desde 100 bs</p>
+
+                </div>
+            </div>
+            <div class="galeria">
+                <div class="fotos">
+                    <img src="sliders/prueba3.jpg" alt="">
+                </div>
+                <div class="pie">
+                    <p>SOLERAS</p>
+                    <p>Desde 90 bs</p>
+
+                </div>
+            </div>
+            <div class="galeria">
+                <div class="fotos">
+                    <img src="sliders/prueba4.jpg" alt="">
+                </div>
+                <div class="pie">
+                    <p>SOUVENIRS</p>
+                    <p>Desde 20 bs</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <h2>PRODUCTOS</h2>
+    <div class="galeria">
+        <div class="fotos">
+            <img src="imagenes/canguro1.jpg" alt="">
+        </div>
+        <div class="pie">
+            <p>CANGUROS</p>
+            <a href="canguros.html" class="canguros-link">Ver colecciones</a>
+        </div>
+    </div>
+    <div class="galeria">
+        <div class="fotos">
+            <img src="imagenes/canguro2.jpg" alt="">
+        </div>
+        <div class="pie">
+            <p>POLERAS</p>
+            <a href="poleras.html" class="poleras-link">Ver colecciones</a>
+        </div>
+    </div>
+    <div class="galeria">
+        <div class="fotos">
+            <img src="imagenes/canguro3.jpg" alt="">
+        </div>
+        <div class="pie">
+            <p>SOLERAS</p>
+            <a href="soleras.html" class="soleras-link">Ver colecciones</a>
+        </div>
+    </div>
+    <div class="galeria">
+        <div class="fotos">
+            <img src="imagenes/canguro4.jpg" alt="">
+        </div>
+        <div class="pie">
+            <p>SOUVENIRS</p>
+            <a href="souvenirs.html" class="souvenirs-link">Ver colecciones</a>
+        </div>
+    </div>
+
+    <div class="content">
+    <footer class="footer">
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/?ref=homescreenpwa"><img src="iconos/facebook.png" alt="Facebook"></a>
+            <a href="https://www.tiktok.com/@frases_aesthetic.73"><img src="iconos/tik tok.png" alt="TikTok"></a>
+            <a href="https://chat.whatsapp.com/JY4hWGaTXdlLZsJ3pATi8r"><img src="iconos/whatsapp.png" alt="whatsapp"></a>
+        </div>
+    </footer>
+</div>
+
+
+<button onclick="scrollToTop()" class="scroll-top-btn" id="scroll-top-btn">Ir arriba</button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            var btn = document.getElementById("scroll-top-btn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+            btn.style.bottom = "20px";
+            btn.style.right = "20px";
+        }
+    </script>
+
+
+    
+</body>
+</html>
